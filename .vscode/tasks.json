@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Java File",
+      "type": "shell",
+      "command": "javac ${file} && java -cp ${fileDirname} ${fileBasenameNoExtension}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Compile and run the current Java file"
+    }
+  ]
+}
